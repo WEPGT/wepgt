@@ -397,21 +397,43 @@
 
 
   <!-- PROJECTS -->
-  <section id="projects" class="min-h-screen flex items-center justify-center bg-[#111] px-6 py-24 md:py-28">
-    <div class="max-w-5xl text-center">
-      <h2 class="text-3xl font-bold text-blue-400 mb-10">Projects & Case Studies</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-        <div class="p-6 border border-neutral-700 rounded-xl bg-[#0f0f0f] hover:border-blue-400 transition">
-          <h3 class="font-semibold text-xl mb-3 text-blue-400">R.A.T. – Report & Transmit</h3>
-          <p class="text-gray-300">A web-based platform for security incident reporting with automated notifications.</p>
-        </div>
-        <div class="p-6 border border-neutral-700 rounded-xl bg-[#0f0f0f] hover:border-blue-400 transition">
-          <h3 class="font-semibold text-xl mb-3 text-blue-400">Resident Verifier</h3>
-          <p class="text-gray-300">PDF import system for property management that verifies tenant and payment details.</p>
-        </div>
+<section id="projects" class="min-h-screen flex items-center justify-center bg-neutral-900 px-6 py-24 md:py-28 text-gray-100">
+  <div class="max-w-5xl text-center z-10">
+    <h2 class="text-3xl font-bold text-blue-400 mb-10">Projects & Case Studies</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+      <!-- R.A.T. Project -->
+      <div class="p-6 bg-neutral-950 border border-neutral-800 rounded-xl shadow-md hover:shadow-blue-500/20 transition">
+        <h3 class="font-semibold text-xl mb-3 text-blue-400">R.A.T. – Report &amp; Transmit Platform</h3>
+        <p class="text-gray-300">
+          Developed a secure <strong>web-based security incident reporting system</strong> with automated notifications, audit-ready logs, and role-based access control.
+          Built with <strong>Node.js, Express, Prisma, and SQLite</strong>, this internal platform improves <strong>situational awareness and compliance tracking</strong> for on-site teams.
+        </p>
       </div>
+
+      <!-- Resident Verifier Project -->
+      <div class="p-6 bg-neutral-950 border border-neutral-800 rounded-xl shadow-md hover:shadow-blue-500/20 transition">
+        <h3 class="font-semibold text-xl mb-3 text-blue-400">Resident-Verifier Application</h3>
+        <p class="text-gray-300">
+          Engineered a <strong>data-import tool for property management systems</strong> that verifies resident records and payment details directly from PDF rent rolls.
+          Built using <strong>Node.js and SQLite</strong>, it streamlines data accuracy, eliminates manual errors, and supports <strong>secure verification workflows</strong>.
+        </p>
+      </div>
+
+      <!-- Expense Tracker (Optional third card for portfolio depth) -->
+      <div class="p-6 bg-neutral-950 border border-neutral-800 rounded-xl shadow-md hover:shadow-blue-500/20 transition md:col-span-2">
+        <h3 class="font-semibold text-xl mb-3 text-blue-400">Expense Tracker Platform</h3>
+        <p class="text-gray-300">
+          Designed a lightweight <strong>financial management and expense tracking web app</strong> for personal and small business use.
+          Incorporates <strong>real-time summaries, local database persistence, and responsive UI</strong> built with <strong>Express.js and EJS templates</strong> for modern usability.
+        </p>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- CONTACT -->
   <section id="contact" class="min-h-screen flex items-center justify-center bg-[#0f0f0f] px-6 py-24 md:py-28">

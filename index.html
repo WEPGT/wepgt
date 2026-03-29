@@ -1,463 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>WEP Global Tech | Cloud Infrastructure & Broadcast Systems Consulting</title>
+    <title>WEP Global Tech | Infrastructure Consulting & Systems Modernization</title>
 
-  <!-- Description for Google -->
-  <meta name="description" content="WEP Global Tech, founded by Elroy Phillip, provides professional Cloud Infrastructure, Broadcast Systems, and IT solutions that empower modern systems through technology. Based on expertise in AWS, media engineering, and secure cloud design." />
+    <meta name="description"
+        content="WEP Global Tech helps businesses modernize infrastructure, strengthen security, and streamline operations through practical cloud, network, and internal systems consulting." />
+    <meta name="keywords"
+        content="WEP Global Tech, infrastructure consulting, systems modernization, cloud infrastructure, network consulting, security operations, automation, IT consulting, Elroy Phillip" />
+    <meta name="author" content="Elroy Phillip, Founder & Infrastructure Consultant" />
+    <link rel="canonical" href="https://wepgt.com/" />
 
-  <!-- Keywords for SEO -->
-  <meta name="keywords" content="WEP Global Tech, Elroy Phillip, Cloud Infrastructure Consultant, Broadcast Systems Administrator, AWS Cloud, IT Solutions, Security Reporting Platform, R.A.T., Resident Verifier, Network Design, Hybrid Cloud, Systems Integration" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="WEP Global Tech | Infrastructure Consulting & Systems Modernization" />
+    <meta property="og:description"
+        content="WEP Global Tech helps businesses modernize infrastructure, strengthen security, and streamline operations through practical cloud, network, and internal systems consulting." />
+    <meta property="og:url" content="https://wepgt.com/" />
+    <meta property="og:image" content="https://wepgt.com/wepgt-preview.png" />
 
-  <!-- Author -->
-  <meta name="author" content="Elroy Phillip, Founder & Cloud Infrastructure Consultant" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="WEP Global Tech | Infrastructure Consulting & Systems Modernization" />
+    <meta name="twitter:description"
+        content="WEP Global Tech helps businesses modernize infrastructure, strengthen security, and streamline operations through practical cloud, network, and internal systems consulting." />
+    <meta name="twitter:image" content="https://wepgt.com/wepgt-preview.png" />
 
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://wepgt.com/" />
+    <link rel="icon" type="image/png" href="wepgt-favicon-32x32.png" />
+    <link rel="shortcut icon" href="wepgt-favicon-32x32.png" type="image/png" />
 
-  <!-- Open Graph / Social Meta -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="WEP Global Tech | Cloud Infrastructure & Broadcast Systems Consulting" />
-  <meta property="og:description" content="Empowering Modern Systems Through Technology — Cloud Infrastructure, Broadcast Systems, and Secure IT Solutions by Elroy Phillip." />
-  <meta property="og:url" content="https://wepgt.com/" />
-  <meta property="og:image" content="https://wepgt.com/wepgt-preview.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="WEP Global Tech | Cloud Infrastructure & Broadcast Systems Consulting" />
-  <meta name="twitter:description" content="Empowering Modern Systems Through Technology — Cloud Infrastructure, Broadcast Systems, and Secure IT Solutions by Elroy Phillip." />
-  <meta name="twitter:image" content="https://wepgt.com/wepgt-preview.png" />
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="wepgt-favicon-32x32.png" />
-
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Smooth Scroll & Header Offset -->
-  <style>
-    html {
-      scroll-behavior: smooth;
-      scroll-padding-top: var(--header-h, 90px);
-    }
-  </style>
-  <!-- Structured Data for Google Knowledge Graph -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "WEP Global Tech",
-  "url": "https://wepgt.com",
-  "logo": "https://wepgt.com/wepgt-preview.png",
-  "founder": {
-    "@type": "Person",
-    "name": "Elroy Phillip",
-    "jobTitle": "Founder & Cloud Infrastructure Consultant",
-    "sameAs": [
-      "https://linkedin.com/in/elroyphillip",
-      "https://github.com/royphillip1969"
-    ]
-  },
-  "description": "WEP Global Tech provides Cloud Infrastructure, Broadcast Systems, and Secure IT consulting solutions that empower modern organizations through technology.",
-  "sameAs": [
-    "https://linkedin.com/in/elroyphillip",
-    "https://github.com/royphillip1969"
-  ],
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "inquiries",
-    "email": "contact@wepgt.com",
-    "url": "https://wepgt.com/#contact"
-  }
-}
-</script>
-
-</head>
-
-
-<body class="bg-[#0f0f0f] text-gray-100">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="wepgt-favicon-32x32.png">
-  <link rel="shortcut icon" href="wepgt-favicon-32x32.png" type="image/png">
-
- <header id="main-header" class="fixed top-0 left-0 w-full bg-[#0f0f0f]/80 backdrop-blur-md z-50 border-b border-neutral-800/70 transition-all duration-300 shadow-sm">
-  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-    <!-- Logo -->
-    <div class="flex flex-col items-center">
-      <img src="img/wepgt-logo.png" alt="WEP Global Tech Logo" class="h-40 w-auto mb-2">
-    </div>
-
-    <!-- Desktop Nav -->
-    <nav class="hidden md:flex space-x-6 font-medium">
-      <a href="#about" class="nav-link text-gray-300 hover:text-blue-400 hover:border-b-2 hover:border-blue-400 transition-all">About</a>
-      <a href="#services" class="nav-link text-gray-300 hover:text-blue-400 hover:border-b-2 hover:border-blue-400 transition-all">Services</a>
-      <a href="#projects" class="nav-link text-gray-300 hover:text-blue-400 hover:border-b-2 hover:border-blue-400 transition-all">Projects</a>
-      <a href="#contact" class="nav-link text-gray-300 hover:text-blue-400 hover:border-b-2 hover:border-blue-400 transition-all">Contact</a>
-    </nav>
-
-    <!-- Mobile Menu Button -->
-    <button id="menu-btn" class="md:hidden text-gray-300 focus:outline-none">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none"
-           viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round"
-              d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
-  </div>
-
-  <!-- Mobile Dropdown -->
-  <nav id="mobile-menu"
-       class="max-h-0 overflow-hidden flex-col md:hidden bg-[#111]/95 backdrop-blur-sm border-t border-neutral-800/60 text-gray-200 font-medium transition-all duration-500 ease-in-out">
-    <a href="#about" class="mobile-link px-6 py-3 hover:text-blue-400 hover:border-l-4 hover:border-blue-400 transition-all">About</a>
-    <a href="#services" class="mobile-link px-6 py-3 hover:text-blue-400 hover:border-l-4 hover:border-blue-400 transition-all">Services</a>
-    <a href="#projects" class="mobile-link px-6 py-3 hover:text-blue-400 hover:border-l-4 hover:border-blue-400 transition-all">Projects</a>
-    <a href="#contact" class="mobile-link px-6 py-3 hover:text-blue-400 hover:border-l-4 hover:border-blue-400 transition-all">Contact</a>
-  </nav>
-</header>
-
-<!-- === Header Behavior Scripts === -->
-<script>
-  const menuBtn = document.getElementById('menu-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
-  const header = document.getElementById('main-header');
-  const navLinks = document.querySelectorAll(".nav-link");
-  const mobileLinks = document.querySelectorAll(".mobile-link");
-  const sections = document.querySelectorAll("section");
-
-  // Toggle mobile menu
-  menuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('max-h-96');
-    mobileMenu.classList.toggle('max-h-0');
-  });
-
-  // Scroll shadow
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 30) {
-      header.classList.add('shadow-lg', 'border-neutral-700');
-    } else {
-      header.classList.remove('shadow-lg', 'border-neutral-700');
-    }
-  });
-
-  // Scroll active link highlight (desktop + mobile)
-  window.addEventListener("scroll", () => {
-    let current = "";
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop - 120;
-      const sectionHeight = section.clientHeight;
-      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-        current = section.getAttribute("id");
-      }
-    });
-
-    [...navLinks, ...mobileLinks].forEach((link) => {
-      link.classList.remove("text-blue-400", "border-b-2", "border-blue-400", "border-l-4");
-      if (link.getAttribute("href") === `#${current}`) {
-        if (link.classList.contains("nav-link")) {
-          link.classList.add("text-blue-400", "border-b-2", "border-blue-400");
-        } else {
-          link.classList.add("text-blue-400", "border-l-4", "border-blue-400");
+    <style>
+        html {
+            scroll-behavior: smooth;
         }
-      }
-    });
-  });
 
-  // Adjust scroll offset
-  window.addEventListener('load', () => {
-    const h = header.offsetHeight;
-    document.documentElement.style.setProperty('--header-h', `${h}px`);
-  });
-  window.addEventListener('resize', () => {
-    const h = header.offsetHeight;
-    document.documentElement.style.setProperty('--header-h', `${h}px`);
-  });
-</script>
+        @keyframes slowspin {
+            from {
+                transform: rotate(0deg);
+            }
 
-<!-- === Header Behavior Scripts === -->
-<script>
-  const menuBtn = document.getElementById('menu-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
-  const header = document.getElementById('main-header');
-  const navLinks = document.querySelectorAll(".nav-link");
-  const sections = document.querySelectorAll("section");
+            to {
+                transform: rotate(360deg);
+            }
+        }
 
-  // Toggle mobile menu
-  menuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('max-h-96');
-    mobileMenu.classList.toggle('max-h-0');
-  });
+        .animate-slowspin {
+            animation: slowspin 45s linear infinite;
+        }
+    </style>
 
-  // Scroll shadow
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 30) {
-      header.classList.add('shadow-lg', 'border-neutral-700');
-    } else {
-      header.classList.remove('shadow-lg', 'border-neutral-700');
-    }
-  });
-
-  // Scroll active link highlight
-  window.addEventListener("scroll", () => {
-    let current = "";
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop - 120;
-      const sectionHeight = section.clientHeight;
-      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-        current = section.getAttribute("id");
-      }
-    });
-
-    navLinks.forEach((link) => {
-      link.classList.remove("text-blue-400", "border-b-2", "border-blue-400");
-      if (link.getAttribute("href") === `#${current}`) {
-        link.classList.add("text-blue-400", "border-b-2", "border-blue-400");
-      }
-    });
-  });
-
-  // Adjust scroll offset
-  window.addEventListener('load', () => {
-    const h = header.offsetHeight;
-    document.documentElement.style.setProperty('--header-h', `${h}px`);
-  });
-  window.addEventListener('resize', () => {
-    const h = header.offsetHeight;
-    document.documentElement.style.setProperty('--header-h', `${h}px`);
-  });
-</script>
-
-
-<!-- Header Scroll Shadow + Offset Script -->
-<script>
-  const menuBtn = document.getElementById('menu-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
-  const header = document.getElementById('main-header');
-
-  // Toggle mobile menu
-  menuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('max-h-96');
-    mobileMenu.classList.toggle('max-h-0');
-  });
-
-  // Scroll shadow effect
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 30) {
-      header.classList.add('shadow-lg', 'border-neutral-700');
-    } else {
-      header.classList.remove('shadow-lg', 'border-neutral-700');
-    }
-  });
-
-  // Header offset adjustment (for anchor links)
-  window.addEventListener('load', () => {
-    const h = header.offsetHeight;
-    document.documentElement.style.setProperty('--header-h', `${h}px`);
-  });
-  window.addEventListener('resize', () => {
-    const h = header.offsetHeight;
-    document.documentElement.style.setProperty('--header-h', `${h}px`);
-  });
-</script>
-<script>
-  // === Scroll Active Link Highlight ===
-  const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll("header nav a");
-
-  window.addEventListener("scroll", () => {
-    let current = "";
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop - 120;
-      const sectionHeight = section.clientHeight;
-      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-        current = section.getAttribute("id");
-      }
-    });
-
-    navLinks.forEach((link) => {
-      link.classList.remove("text-blue-400", "border-b-2", "border-blue-400");
-      if (link.getAttribute("href") === `#${current}`) {
-        link.classList.add("text-blue-400", "border-b-2", "border-blue-400");
-      }
-    });
-  });
-</script>
-
-
-  <!-- Mobile Menu Toggle -->
-  <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('max-h-96');
-      mobileMenu.classList.toggle('max-h-0');
-    });
-  </script>
-
-  <!-- HERO -->
-  <section id="home" class="relative flex flex-col justify-center items-center min-h-screen bg-[#0f0f0f] text-gray-100 text-center overflow-hidden">
-    <div class="absolute inset-0 flex justify-center items-center pointer-events-none z-0">
-      <img src="wepgt-logo.png" alt="WEP Global Tech Globe Background"
-           class="animate-slowspin opacity-25 md:opacity-20 max-w-[90%] md:max-w-[60%] blur-sm select-none">
-    </div>
-
-    <div class="relative z-10 px-6">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4 text-blue-400">WEP Global Tech</h1>
-      <p class="text-lg md:text-2xl mb-8 text-gray-300">Empowering Modern Systems Through Technology</p>
-      <a href="#about" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition">
-        Learn More
-      </a>    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="relative min-h-screen flex flex-col justify-center items-center bg-neutral-900 text-gray-100 px-6 py-24 text-center overflow-hidden">
-  <!-- Globe Watermark Background (Animated) -->
-  <div class="absolute inset-0 flex justify-center items-center pointer-events-none z-0">
-    <img src="wepgt-logo.png" 
-         alt="WEP Global Tech Globe" 
-         class="animate-slowspin opacity-25 md:opacity-20 max-w-[85%] md:max-w-[55%] blur-sm select-none">
-  </div>
-
-  <div class="relative max-w-4xl z-10">
-    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-blue-400">About WEP Global Tech</h2>
-
-    <p class="text-lg md:text-xl leading-relaxed mb-6">
-      <strong>WEP Global Tech</strong> is a technology consulting firm specializing in <strong>cloud infrastructure, broadcast systems engineering, and IT operations</strong>. Founded by <strong>Elroy Phillip</strong>, a seasoned <strong>Cloud Infrastructure Consultant and Broadcast Systems Administrator</strong>, our mission is to help organizations modernize, secure, and optimize their technology environments.
-    </p>
-
-    <p class="text-lg md:text-xl leading-relaxed mb-6">
-      With a foundation built on decades of experience in <strong>broadcast engineering and cloud architecture</strong>, WEP Global Tech bridges the gap between traditional media infrastructure and next-generation cloud ecosystems. Our expertise spans <strong>AWS cloud solutions, systems automation, network design, hybrid integrations, and operational reliability</strong>.
-    </p>
-
-    <p class="text-lg md:text-xl leading-relaxed mb-6">
-      Whether supporting <strong>control room systems for major broadcast networks</strong> or deploying <strong>scalable AWS cloud platforms</strong> for enterprise clients, WEP Global Tech delivers technology solutions that are <strong>secure, reliable, and performance-driven</strong>. 
-    </p>
-
-    <p class="text-lg md:text-xl leading-relaxed">
-      In addition to client services, we develop innovative internal tools such as the <strong>R.A.T. (Report &amp; Transmit)</strong> platform for security reporting and the <strong>Resident-Verifier</strong> application for property management — reflecting our commitment to practical innovation and operational excellence.
-    </p>
-  </div>
-
-  <!-- Founder Bio Card -->
-  <div class="relative z-10 mt-12 bg-neutral-800 border border-neutral-700 rounded-2xl shadow-xl p-8 max-w-md mx-auto text-center">
-    <img src="founder.png" alt="Elroy Phillip" class="w-28 h-28 mx-auto rounded-full border-4 border-blue-400 shadow-md mb-4 object-cover">
-    <h3 class="text-2xl font-semibold">Elroy Phillip</h3>
-    <p class="text-blue-400 text-sm mb-4">Founder & Cloud Infrastructure Consultant</p>
-    <p class="text-gray-300 text-base mb-4">
-      Combining the precision of broadcast engineering with the scalability of cloud innovation, Elroy leads WEP Global Tech in building modern, secure, and mission-critical technology solutions.
-    </p>
-    <div class="flex justify-center space-x-4">
-      <a href="https://linkedin.com/in/elroyphillip" target="_blank" class="hover:text-blue-400 transition">LinkedIn</a>
-      <a href="https://github.com/royphillip1969" target="_blank" class="hover:text-blue-400 transition">GitHub</a>
-      <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
-    </div>
-  </div>
-</section>
-<!-- SERVICES -->
-<section id="services" class="min-h-screen flex items-center justify-center bg-neutral-950 px-6 py-24 md:py-28 text-gray-100">
-  <div class="max-w-5xl text-center z-10">
-    <h2 class="text-3xl font-bold text-blue-400 mb-10">Core Services</h2>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-
-      <!-- Cloud Infrastructure -->
-      <div class="p-6 bg-neutral-900 border border-neutral-800 rounded-xl shadow-md hover:shadow-blue-500/20 transition">
-        <h3 class="font-semibold text-xl mb-3 text-blue-400">Cloud Infrastructure & Automation</h3>
-        <p class="text-gray-300">
-          Design, deploy, and manage <strong>scalable AWS cloud environments</strong> with secure networking, automation pipelines, and hybrid integrations.
-          WEP Global Tech provides <strong>infrastructure as code (IaC)</strong>, monitoring, and optimization for <strong>high-availability cloud solutions</strong>.
-        </p>
-      </div>
-
-      <!-- Broadcast Systems -->
-      <div class="p-6 bg-neutral-900 border border-neutral-800 rounded-xl shadow-md hover:shadow-blue-500/20 transition">
-        <h3 class="font-semibold text-xl mb-3 text-blue-400">Broadcast Systems Engineering</h3>
-        <p class="text-gray-300">
-          End-to-end <strong>broadcast control room design, systems integration, and media operations support</strong>.
-          From <strong>signal routing and automation</strong> to IP-based broadcast infrastructure, we modernize legacy systems with reliability and precision.
-        </p>
-      </div>
-
-      <!-- Security & Compliance -->
-      <div class="p-6 bg-neutral-900 border border-neutral-800 rounded-xl shadow-md hover:shadow-blue-500/20 transition">
-        <h3 class="font-semibold text-xl mb-3 text-blue-400">Cybersecurity & Compliance</h3>
-        <p class="text-gray-300">
-          Build resilient infrastructures with proactive <strong>security monitoring, incident reporting, and compliance enforcement</strong>.
-          Our <strong>R.A.T. (Report & Transmit)</strong> platform and IT governance strategies strengthen both physical and digital security frameworks.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-  <!-- PROJECTS -->
-<section id="projects" class="min-h-screen flex items-center justify-center bg-neutral-900 px-6 py-24 md:py-28 text-gray-100">
-  <div class="max-w-5xl text-center z-10">
-    <h2 class="text-3xl font-bold text-blue-400 mb-10">Projects & Case Studies</h2>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-
-      <!-- R.A.T. Project -->
-      <div class="p-6 bg-neutral-950 border border-neutral-800 rounded-xl shadow-md hover:shadow-blue-500/20 transition">
-        <h3 class="font-semibold text-xl mb-3 text-blue-400">R.A.T. – Report &amp; Transmit Platform</h3>
-        <p class="text-gray-300">
-          Developed a secure <strong>web-based security incident reporting system</strong> with automated notifications, audit-ready logs, and role-based access control.
-          Built with <strong>Node.js, Express, Prisma, and SQLite</strong>, this internal platform improves <strong>situational awareness and compliance tracking</strong> for on-site teams.
-        </p>
-      </div>
-
-      <!-- Resident Verifier Project -->
-      <div class="p-6 bg-neutral-950 border border-neutral-800 rounded-xl shadow-md hover:shadow-blue-500/20 transition">
-        <h3 class="font-semibold text-xl mb-3 text-blue-400">Resident-Verifier Application</h3>
-        <p class="text-gray-300">
-          Engineered a <strong>data-import tool for property management systems</strong> that verifies resident records and payment details directly from PDF rent rolls.
-          Built using <strong>Node.js and SQLite</strong>, it streamlines data accuracy, eliminates manual errors, and supports <strong>secure verification workflows</strong>.
-        </p>
-      </div>
-
-      <!-- Expense Tracker (Optional third card for portfolio depth) -->
-      <div class="p-6 bg-neutral-950 border border-neutral-800 rounded-xl shadow-md hover:shadow-blue-500/20 transition md:col-span-2">
-        <h3 class="font-semibold text-xl mb-3 text-blue-400">Expense Tracker Platform</h3>
-        <p class="text-gray-300">
-          Designed a lightweight <strong>financial management and expense tracking web app</strong> for personal and small business use.
-          Incorporates <strong>real-time summaries, local database persistence, and responsive UI</strong> built with <strong>Express.js and EJS templates</strong> for modern usability.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-  <!-- CONTACT -->
- <section id="contact" class="min-h-screen flex items-center justify-center bg-neutral-950 text-gray-100 px-6 py-24 md:py-28">
-  <div class="max-w-3xl text-center z-10">
-    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-blue-400">Get in Touch</h2>
-
-    <p class="text-lg md:text-xl text-gray-300 mb-8">
-      Let’s collaborate on your next project. Whether you need <strong>cloud infrastructure consulting, broadcast systems integration, or IT modernization</strong>,
-      <strong>WEP Global Tech</strong> provides secure, reliable, and scalable solutions tailored to your organization’s goals.
-    </p>
-
-    <a href="mailto:contact@wepgt.com" 
-       class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-10 rounded-full shadow-lg transition">
-      contact@wepgt.com
-    </a>
-
-    <p class="text-sm text-gray-500 mt-6">
-      Based in the United States — serving clients nationwide and internationally.
-    </p>
-  </div>
-</section>
-
-<!-- Contact Schema for Google -->
-<script type="application/ld+json">
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -467,43 +62,564 @@
   "founder": {
     "@type": "Person",
     "name": "Elroy Phillip",
-    "jobTitle": "Founder & Cloud Infrastructure Consultant",
+    "jobTitle": "Founder & Infrastructure Consultant",
     "sameAs": [
       "https://linkedin.com/in/elroyphillip",
       "https://github.com/royphillip1969"
     ]
   },
-  "description": "WEP Global Tech provides Cloud Infrastructure, Broadcast Systems, and Secure IT consulting solutions that empower modern organizations through technology.",
+  "description": "WEP Global Tech provides infrastructure consulting, security operations support, and internal systems solutions for organizations that need reliable, modern technology environments.",
   "sameAs": [
     "https://linkedin.com/in/elroyphillip",
     "https://github.com/royphillip1969"
   ],
   "contactPoint": [{
     "@type": "ContactPoint",
-    "contactType": "customer support",
+    "contactType": "consulting inquiries",
     "email": "contact@wepgt.com",
-    "availableLanguage": ["English"],
-    "areaServed": "Worldwide"
+    "url": "https://wepgt.com/#contact"
   }]
 }
-</script>
+  </script>
+</head>
 
+<body class="bg-[#0f0f0f] text-gray-100">
 
+    <!-- HEADER -->
+    <header id="main-header"
+        class="fixed top-0 left-0 w-full bg-[#0f0f0f]/85 backdrop-blur-md z-50 border-b border-neutral-800/70 shadow-sm">
+        <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+            <a href="#home" class="flex flex-col items-center shrink-0">
+                <img src="img/wepgt-logo.png" alt="WEP Global Tech Logo" class="h-24 md:h-28 w-auto">
+            </a>
 
-  <!-- FOOTER -->
-  <footer class="bg-[#111] border-t border-neutral-800 text-center py-6">
-    <p class="text-gray-400 text-sm">&copy; 2025 WEP Global Tech. All rights reserved.</p>
-  </footer>
-  <style>
-@keyframes slowspin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-.animate-slowspin {
-  animation: slowspin 45s linear infinite;
-}
-</style>
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="#about" class="nav-link text-gray-300 hover:text-blue-400 transition-all">About</a>
+                <a href="#services" class="nav-link text-gray-300 hover:text-blue-400 transition-all">Services</a>
+                <a href="#projects" class="nav-link text-gray-300 hover:text-blue-400 transition-all">Projects</a>
+                <a href="#contact" class="nav-link text-gray-300 hover:text-blue-400 transition-all">Contact</a>
+            </nav>
 
+            <button id="menu-btn" class="md:hidden text-gray-300 focus:outline-none" aria-label="Toggle menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
 
+        <nav id="mobile-menu"
+            class="max-h-0 overflow-hidden flex-col md:hidden bg-[#111]/95 backdrop-blur-sm border-t border-neutral-800/60 text-gray-200 font-medium transition-all duration-500 ease-in-out">
+            <a href="#about" class="mobile-link block px-6 py-3 hover:text-blue-400 transition-all">About</a>
+            <a href="#services" class="mobile-link block px-6 py-3 hover:text-blue-400 transition-all">Services</a>
+            <a href="#projects" class="mobile-link block px-6 py-3 hover:text-blue-400 transition-all">Projects</a>
+            <a href="#contact" class="mobile-link block px-6 py-3 hover:text-blue-400 transition-all">Contact</a>
+        </nav>
+    </header>
+
+    <main class="pt-32 md:pt-36">
+
+        <!-- HERO -->
+        <section id="home"
+            class="relative min-h-[calc(100vh-8rem)] md:min-h-[calc(100vh-9rem)] flex items-center justify-center bg-[#0f0f0f] text-gray-100 text-center overflow-hidden px-6 scroll-mt-32">
+            <div class="absolute inset-0 flex justify-center items-center pointer-events-none z-0">
+                <img src="wepgt-logo.png" alt="WEP Global Tech Globe Background"
+                    class="animate-slowspin opacity-2 0 md:opacity-20 max-w-[110%] md:max-w-[70%] blur-[0.1px]">
+            </div>
+
+            <div class="relative z-10 max-w-4xl">
+                <h1 class="text-3xl md:text-5xl font-bold mb-2 text-blue-400 tracking-wide">
+                    WEP Global Tech
+                </h1>
+
+                <h2 class="text-2xl md:text-5xl font-semibold mb-6 text-white">
+                    Infrastructure Consulting for Modern Business Operations
+                </h2>
+                <p class="text-lg md:text-2xl mb-10 text-gray-300">
+                    WEP Global Tech helps businesses modernize infrastructure, strengthen security, and streamline
+                    operations
+                    through practical cloud, network, and internal systems consulting.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#contact"
+                        class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition">
+                        Request a Consultation
+                    </a>
+                    <a href="#services"
+                        class="inline-block border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-black font-semibold py-3 px-8 rounded-full transition">
+                        View Services
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CREDIBILITY STRIP -->
+        <section class="bg-black border-y border-neutral-800 px-6 py-8">
+            <div class="max-w-6xl mx-auto text-center">
+                <h2 class="text-xl md:text-2xl font-semibold text-white mb-4">Available for</h2>
+                <div class="flex flex-wrap justify-center gap-3 text-sm md:text-base">
+                    <span
+                        class="px-4 py-2 rounded-full bg-neutral-900 border border-neutral-700 text-gray-300">Infrastructure
+                        Assessments</span>
+                    <span class="px-4 py-2 rounded-full bg-neutral-900 border border-neutral-700 text-gray-300">Contract
+                        Engineering Support</span>
+                    <span class="px-4 py-2 rounded-full bg-neutral-900 border border-neutral-700 text-gray-300">Systems
+                        Modernization Projects</span>
+                    <span class="px-4 py-2 rounded-full bg-neutral-900 border border-neutral-700 text-gray-300">Security
+                        Operations Workflow Improvements</span>
+                    <span
+                        class="px-4 py-2 rounded-full bg-neutral-900 border border-neutral-700 text-gray-300">Technical
+                        Advisory Work</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about"
+            class="relative bg-neutral-900 text-gray-100 px-6 pt-10 pb-20 md:pt-14 md:pb-24 text-center overflow-hidden scroll-mt-32">
+            <div class="absolute inset-0 flex justify-center items-center pointer-events-none z-0">
+                <img src="wepgt-logo.png"
+                    class="animate-slowspin opacity-50 md:opacity-40 max-w-[110%] md:max-w-[70%] blur-[0.5px]">
+            </div>
+
+            <div class="relative max-w-4xl mx-auto z-10">
+                <h2 class="text-3xl md:text-5xl font-bold mb-8 text-white">About WEP Global Tech</h2>
+
+                <p class="text-lg md:text-xl leading-relaxed mb-6">
+                    <strong>WEP Global Tech</strong> is a technology consulting firm focused on
+                    <strong>infrastructure modernization, security operations support, and internal systems
+                        improvement</strong>.
+                </p>
+
+                <p class="text-lg md:text-xl leading-relaxed mb-6">
+                    We help businesses build reliable IT environments, improve visibility across operations, and
+                    implement
+                    practical solutions that reduce risk and increase efficiency. From network and server deployments to
+                    monitoring, reporting workflows, and cloud-connected systems, our work is designed to support real
+                    operational needs.
+                </p>
+
+                <p class="text-lg md:text-xl leading-relaxed">
+                    Founded by <strong>Elroy Phillip</strong>, WEP Global Tech combines hands-on infrastructure
+                    experience with
+                    a strong understanding of mission-critical environments, making it a strong fit for organizations
+                    that need
+                    a dependable technical partner for consulting, contract projects, and systems improvement
+                    initiatives.
+                </p>
+            </div>
+
+            <div
+                class="relative z-10 mt-12 bg-neutral-800/95 border border-neutral-700 rounded-2xl shadow-xl p-8 max-w-md mx-auto text-center">
+                <img src="founder.png" alt="Elroy Phillip"
+                    class="w-28 h-28 mx-auto rounded-full border-4 border-blue-400 shadow-md mb-4 object-cover">
+                <h3 class="text-2xl font-semibold">Elroy Phillip</h3>
+                <p class="text-blue-400 text-sm mb-4">Founder &amp; Infrastructure Consultant</p>
+                <p class="text-gray-300 text-base mb-4">
+                    Elroy brings together infrastructure, systems operations, and real-world implementation experience
+                    to help
+                    organizations improve reliability, visibility, and operational readiness.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="https://linkedin.com/in/elroyphillip" target="_blank" rel="noopener noreferrer"
+                        class="hover:text-blue-400 transition">LinkedIn</a>
+                    <a href="https://github.com/royphillip1969" target="_blank" rel="noopener noreferrer"
+                        class="hover:text-blue-400 transition">GitHub</a>
+                    <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="bg-neutral-950 px-6 pt-10 pb-20 md:pt-14 md:pb-24 text-gray-100 scroll-mt-32">
+            <div class="max-w-6xl mx-auto text-center w-full">
+                <h2 class="text-3xl md:text-5xl font-bold mb-10 text-white">Core Services</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+                    <div
+                        class="p-8 bg-black border border-neutral-700 rounded-2xl shadow-md hover:shadow-blue-500/20 transition">
+                        <h3 class="text-2xl font-semibold mb-6 text-white">Infrastructure &amp; Network Consulting</h3>
+                        <p class="text-gray-300 text-lg leading-relaxed">
+                            We assess, design, and improve secure IT environments for growing organizations. From
+                            network
+                            segmentation and WiFi optimization to server and cloud-connected infrastructure, we help
+                            build systems
+                            that are reliable, scalable, and easier to manage.
+                        </p>
+                    </div>
+
+                    <div
+                        class="p-8 bg-black border border-neutral-700 rounded-2xl shadow-md hover:shadow-blue-500/20 transition">
+                        <h3 class="text-2xl font-semibold mb-6 text-white">Security Monitoring &amp; Operations Support
+                        </h3>
+                        <p class="text-gray-300 text-lg leading-relaxed">
+                            We help organizations improve operational security through access control design, system
+                            monitoring,
+                            incident visibility, and structured reporting workflows. The goal is simple: detect issues
+                            earlier,
+                            reduce operational risk, and support compliance readiness.
+                        </p>
+                    </div>
+
+                    <div
+                        class="p-8 bg-black border border-neutral-700 rounded-2xl shadow-md hover:shadow-blue-500/20 transition">
+                        <h3 class="text-2xl font-semibold mb-6 text-white">Automation &amp; Internal Systems</h3>
+                        <p class="text-gray-300 text-lg leading-relaxed">
+                            We design internal tools and process improvements that reduce manual work and improve
+                            day-to-day
+                            visibility. From reporting platforms to business workflow automation, we build practical
+                            systems that
+                            support smoother operations.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="mt-12">
+                    <a href="#contact"
+                        class="inline-block px-8 py-4 bg-blue-500 text-white font-semibold rounded-xl shadow-md hover:bg-blue-600 transition">
+                        Request Free Infrastructure Assessment
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="bg-neutral-900 px-6 pt-10 pb-20 md:pt-14 md:pb-24 text-gray-100 scroll-mt-32">
+            <div class="max-w-6xl mx-auto text-center w-full">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4 text-white">Selected Solutions</h2>
+                <p class="text-lg text-gray-300 max-w-4xl mx-auto mb-10">
+                    Examples of platforms and operational tools developed to improve reporting, visibility, and
+                    infrastructure-supported workflows.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+                    <div
+                        class="p-6 bg-neutral-950 border border-neutral-800 rounded-xl shadow-md hover:shadow-blue-500/20 transition text-left">
+                        <h3 class="font-semibold text-xl mb-3 text-blue-400">R.A.T. – Report &amp; Transmit Platform
+                        </h3>
+                        <p class="text-gray-300">
+                            Developed a secure incident reporting platform designed to improve visibility,
+                            documentation,
+                            and operational response workflows. Built to support structured reporting, audit-ready
+                            records,
+                            and better coordination across security-related environments.
+                        </p>
+                    </div>
+
+                    <div
+                        class="p-6 bg-neutral-950 border border-neutral-800 rounded-xl shadow-md hover:shadow-blue-500/20 transition text-left">
+                        <h3 class="font-semibold text-xl mb-3 text-blue-400">Resident-Verifier Application</h3>
+                        <p class="text-gray-300">
+                            Built a verification workflow tool that helps property management operations improve data
+                            validation
+                            and reduce manual errors. Designed to support cleaner record handling, stronger process
+                            control,
+                            and more efficient administrative workflows.
+                        </p>
+                    </div>
+
+                    <div
+                        class="p-6 bg-neutral-950 border border-neutral-800 rounded-xl shadow-md hover:shadow-blue-500/20 transition md:col-span-2 text-left">
+                        <h3 class="font-semibold text-xl mb-3 text-blue-400">Expense Tracker Platform</h3>
+                        <p class="text-gray-300">
+                            Designed a lightweight internal financial tracking application focused on operational
+                            visibility,
+                            simple reporting, and reliable day-to-day use. Demonstrates the ability to turn practical
+                            business
+                            needs into clean, usable internal systems.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="bg-neutral-950 text-gray-100 px-6 pt-10 pb-20 md:pt-14 md:pb-24 scroll-mt-32">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6 text-white">Schedule a Consultation</h2>
+
+                <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
+                    Need help with infrastructure improvements, systems modernization, or operational support?
+                    WEP Global Tech is available for consulting engagements, contract projects, and technical advisory
+                    work.
+                </p>
+
+                <div class="bg-black border border-neutral-800 rounded-2xl shadow-xl p-8 md:p-10 text-left">
+                    <form id="consultation-form" action="https://formspree.io/f/xqegpgea" method="POST"
+                        class="space-y-5">
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Name</label>
+                                <input type="text" id="name" name="name" required
+                                    class="w-full rounded-xl bg-neutral-900 border border-neutral-700 px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-blue-400"
+                                    placeholder="Your name">
+                            </div>
+
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+                                <input type="email" id="email" name="email" required
+                                    class="w-full rounded-xl bg-neutral-900 border border-neutral-700 px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-blue-400"
+                                    placeholder="your@email.com">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-300 mb-2">Phone
+                                    Number</label>
+                                <input type="tel" id="phone" name="phone"
+                                    class="w-full rounded-xl bg-neutral-900 border border-neutral-700 px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-blue-400"
+                                    placeholder="Optional">
+                            </div>
+
+                            <div>
+                                <label for="company" class="block text-sm font-medium text-gray-300 mb-2">Company /
+                                    Organization</label>
+                                <input type="text" id="company" name="company"
+                                    class="w-full rounded-xl bg-neutral-900 border border-neutral-700 px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-blue-400"
+                                    placeholder="Company name">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="project_type" class="block text-sm font-medium text-gray-300 mb-2">Project
+                                    Type</label>
+                                <select id="project_type" name="project_type"
+                                    class="w-full rounded-xl bg-neutral-900 border border-neutral-700 px-4 py-3 text-white focus:outline-none focus:border-blue-400">
+                                    <option value="">Select one</option>
+                                    <option>Infrastructure Assessment</option>
+                                    <option>Network / Server Upgrade</option>
+                                    <option>Security Monitoring / Operations Support</option>
+                                    <option>Internal System / Workflow Automation</option>
+                                    <option>Contract Engineering Support</option>
+                                    <option>Technical Advisory / Consulting</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="contact_preference"
+                                    class="block text-sm font-medium text-gray-300 mb-2">Preferred Contact
+                                    Method</label>
+                                <select id="contact_preference" name="contact_preference"
+                                    class="w-full rounded-xl bg-neutral-900 border border-neutral-700 px-4 py-3 text-white focus:outline-none focus:border-blue-400">
+                                    <option>Email</option>
+                                    <option>Phone Call</option>
+                                    <option>Schedule a Meeting</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="availability" class="block text-sm font-medium text-gray-300 mb-2">Best
+                                    Time to Reach You</label>
+                                <input type="text" id="availability" name="availability"
+                                    class="w-full rounded-xl bg-neutral-900 border border-neutral-700 px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-blue-400"
+                                    placeholder="Example: Weekdays after 3pm">
+                            </div>
+
+                            <div>
+                                <label for="timeline" class="block text-sm font-medium text-gray-300 mb-2">Estimated
+                                    Timeline</label>
+                                <input type="text" id="timeline" name="timeline"
+                                    class="w-full rounded-xl bg-neutral-900 border border-neutral-700 px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-blue-400"
+                                    placeholder="Example: ASAP, 30 days, next quarter">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Project
+                                Details</label>
+                            <textarea id="message" name="message" rows="6" required
+                                class="w-full rounded-xl bg-neutral-900 border border-neutral-700 px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-blue-400"
+                                placeholder="Tell me about your current environment, challenge, or project goals."></textarea>
+                        </div>
+
+                        <div class="text-center pt-2">
+                            <button type="submit" id="submit-button"
+                                class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-10 rounded-full shadow-lg transition">
+                                Submit Consultation Request
+                            </button>
+                        </div>
+
+                        <p id="form-status" class="text-center text-sm text-gray-400 hidden"></p>
+                    </form>
+
+                    <div id="form-success"
+                        class="hidden text-center py-12 min-h-[260px] flex flex-col items-center justify-center">
+                        <h3 class="text-2xl font-bold text-blue-400 mb-4">Request Received</h3>
+                        <p class="text-gray-300 mb-3">
+                            Thank you for contacting WEP Global Tech.
+                        </p>
+                        <p class="text-gray-400 mb-6">
+                            Your consultation request has been submitted successfully. We will review your request
+                            and follow up with you shortly.
+                        </p>
+                        <a href="mailto:contact@wepgt.com"
+                            class="inline-block border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-black font-semibold py-3 px-8 rounded-full transition">
+                            Email WEP Global Tech
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="text-sm text-gray-500 mt-6 text-center">
+                Prefer email? Reach out directly at
+                <a href="mailto:contact@wepgt.com" class="text-blue-400 hover:underline">contact@wepgt.com</a>
+            </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#111] border-t border-neutral-800 text-center py-6">
+        <p class="text-gray-400 text-sm">&copy; 2025 WEP Global Tech. All rights reserved.</p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const header = document.getElementById('main-header');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        const sections = document.querySelectorAll('main section[id]');
+
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('max-h-96');
+                mobileMenu.classList.toggle('max-h-0');
+            });
+        }
+
+        function updateActiveNav() {
+            let current = '';
+
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop - header.offsetHeight - 40;
+                const sectionHeight = section.offsetHeight;
+
+                if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            [...navLinks, ...mobileLinks].forEach((link) => {
+                link.classList.remove('text-blue-400', 'border-b-2', 'border-blue-400', 'border-l-4');
+
+                if (link.getAttribute('href') === `#${current}`) {
+                    if (link.classList.contains('nav-link')) {
+                        link.classList.add('text-blue-400', 'border-b-2', 'border-blue-400');
+                    } else {
+                        link.classList.add('text-blue-400', 'border-l-4', 'border-blue-400');
+                    }
+                }
+            });
+        }
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-lg');
+            } else {
+                header.classList.remove('shadow-lg');
+            }
+
+            updateActiveNav();
+        });
+
+        [...mobileLinks].forEach((link) => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('max-h-96');
+                mobileMenu.classList.add('max-h-0');
+            });
+        });
+
+        window.addEventListener('load', updateActiveNav);
+    </script>
+    <script>
+        const consultationForm = document.getElementById('consultation-form');
+        const formStatus = document.getElementById('form-status');
+        const formSuccess = document.getElementById('form-success');
+        const submitButton = document.getElementById('submit-button');
+
+        if (consultationForm) {
+            consultationForm.addEventListener('submit', async function (e) {
+                e.preventDefault();
+
+                if (formStatus) {
+                    formStatus.classList.remove('hidden');
+                    formStatus.textContent = 'Submitting your request...';
+                }
+
+                if (submitButton) {
+                    submitButton.disabled = true;
+                    submitButton.classList.add('opacity-60', 'cursor-not-allowed');
+                }
+
+                const formData = new FormData(consultationForm);
+
+                try {
+                    const response = await fetch(consultationForm.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+
+                    if (response.ok) {
+                        consultationForm.reset();
+                        consultationForm.classList.add('hidden');
+
+                        if (formStatus) {
+                            formStatus.classList.add('hidden');
+                        }
+
+                        if (formSuccess) {
+                            formSuccess.classList.remove('hidden');
+
+                            setTimeout(() => {
+                                formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            }, 100);
+                        }
+                    } else {
+                        const data = await response.json();
+
+                        if (formStatus) {
+                            if (data.errors && data.errors.length > 0) {
+                                formStatus.textContent = data.errors.map(error => error.message).join(', ');
+                            } else {
+                                formStatus.textContent = 'Something went wrong. Please try again or email contact@wepgt.com.';
+                            }
+                        }
+
+                        if (submitButton) {
+                            submitButton.disabled = false;
+                            submitButton.classList.remove('opacity-60', 'cursor-not-allowed');
+                        }
+                    }
+                } catch (error) {
+                    if (formStatus) {
+                        formStatus.textContent = 'Unable to submit right now. Please try again or email contact@wepgt.com.';
+                    }
+
+                    if (submitButton) {
+                        submitButton.disabled = false;
+                        submitButton.classList.remove('opacity-60', 'cursor-not-allowed');
+                    }
+                }
+            });
+        }
+    </script>
 </body>
+
 </html>
